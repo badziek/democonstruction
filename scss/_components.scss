@@ -1,0 +1,28 @@
+.wraper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1500px;
+}
+.container {
+	margin: 0 auto;
+	padding: 0 2rem;
+	max-width: 1500px;
+}
+.section-text {
+	font-size: 1.5rem;
+	color: $gray;
+	font-weight: normal;
+	line-height: 2;
+}
+.button {
+	padding: 1rem 2rem;
+	font-size: 1.6rem;
+	color: white;
+	background-color: $black;
+}
+.card {
+	margin: 1rem;
+}
+.section {
+	padding: 5rem 0;
+}

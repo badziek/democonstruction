@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Builder</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/61f26e0479.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="wraper">
+            <div class="header__box">
+                <a href="#" class="header__logo">Your<span>Builder</span></a>
+                <nav class="header__navitems">
+                    <a href="#home" class="header__navitem">Home</a>
+                    <a href="#about" class="header__navitem">About</a>
+                    <a href="#services" class="header__navitem">Services</a>
+                    <a href="#project" class="header__navitem">Projects</a>
+                    <a href="#pricing" class="header__navitem">Pricing</a>
+                    <a href="#contact" class="header__navitem">Contact</a>
+                    <a href="#blog" class="header__navitem">Blog</a>
+                </nav>
+                <div class="header__icons">
+                    <div id="menu-btn" class="header__icon header__icon--color fas fa-bars"></div>
+                    <div id="user-btn" class="header__icon fas fa-user"></div>
+                    <div id="search-btn" class="header__icon fas fa-search"></div>
+                    <div id="info-btn" class="header__icon fas fa-info"></div>
+                </div>
+                <form class="header__search">
+                    <input class="header__input" type="search" placeholder="type text.." id="search-box">
+                    <label for="search-box" class="header__icon fas fa-search"></label>
+                </form>
+                <form class="header__user">
+                    <h3 class="header__user-title">Login</h3>
+                    <input type="email" placeholder="enter your email" class="header__user-input">
+                    <input type="password" placeholder="enter your password" class="header__user-input">
+                    <div class="header__user-box">
+                        <div class="header__checkbox">
+                            <input type="checkbox" id="remember-me" class="header__user-checkbox">
+                            <label class="header__user-label" for="remember-me">Remember me</label>
+                        </div>
+                        <a href="#" class="header__user-link">forgot password?</a>
+                    </div>
+                    <input type="submit" value="Login" class="header__user-input header__user-input--color">
+                    <p class="header__user-text">Don't have an account <a href="#"
+                            class="header__user-link header__user-link--color">Create one!</a></p>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="info">
+        <div id="info__close" class="info__close fas fa-times"></div>
+        <div class="info__content">
+            <div class="info__ico fas fa-mobile-alt"></div>
+            <h3 class="info__header">Phone Number</h3>
+            <p class="info__text">+111-111-111</p>
+            <p class="info__text">+99-999-999</p>
+        </div>
+        <div class="info__content">
+            <div class="info__ico fas fas fa-at"></div>
+            <h3 class="info__header">E-mail </h3>
+            <p class="info__text">info@info.com</p>
+            <p class="info__text">help.desk@info.com</p>
+        </div>
+        <div class="info__content">
+            <div class="info__ico fas fa-map-marker-alt"></div>
+            <h3 class="info__header">Address</h3>
+            <p class="info__text">New York</p>
+            <p class="info__text">Roosevelt street 1</p>
+        </div>
+        <div class="info__content info__content-social ">
+            <div class="info__ico info__ico-social fab fa-twitter"></div>
+            <div class="info__ico info__ico-social fab fa-instagram"></div>
+            <div class="info__ico info__ico-social fab fa-facebook-f"></div>
+        </div>
+    </div>
+    <main>
+        <section class="home" id="home">
+            <section class="home__box">
+                <div class="wraper">
+                    <div class="home__content">
+                        <h1 class="home__title home__item">
+                            Making dream come to life
+                        </h1>
+                        <p class="home__text home__item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Aliquam aut
+                            inventore quia odit, ex quam.</p>
+                        <a href="#about" class="home__button home__item">Get started</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section class="about section" id="about">
+            <div class="wraper container">
+                <h2 class="about__title">About Us</h2>
+                <div class="about__box">
+                    <div class="about__video"><video class="about__video-play" src="./img/about-vid.mp4" loop muted
+                            autoplay></video></div>
+                    <div class="about__content about__item">
+                        <h3 class="about__content-title about__item">
+                            We will provide you the best work which you dream for!
+                        </h3>
+                        <p class="about__text about__item section-text">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Laboriosam est esse cumque numquam obcaecati, possimus quos quas quisquam
+                            asperiores! Ex illo dolores aut quas doloremque corrupti distinctio ullam error ab.</p>
+                        <a href="#services" class="about__button about__item button">Read more</a>
+                    </div>
+                </div>
+                <div class="about__cards about__item">
+                    <div class="about__card">
+                        <h4 class="about__card-title">15+</h4>
+                        <p class="about__card-text">years of experiance</p>
+                    </div>
+                    <div class="about__card">
+                        <h4 class="about__card-title">1100+</h4>
+                        <p class="about__card-text">project completed</p>
+                    </div>
+                    <div class="about__card">
+                        <h4 class="about__card-title">500+</h4>
+                        <p class="about__card-text">satesfied clients</p>
+                    </div>
+                    <div class="about__card">
+                        <h4 class="about__card-title">370+</h4>
+                        <p class="about__card-text">active workers</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="services section" id="services">
+            <div class="wraper container">
+                <h2 class="services__title">Services</h2>
+                <div class="services__cards">
+                    <div class="services__card">
+                        <img src="./img/service-1.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Building construction</h4>
+                        <p class="services__card-text card">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Libero, necessitatibus!</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-2.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">House renovation</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-3.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Architechture design</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-4.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Material supply</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-5.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Construction consultant</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-6.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Interior design</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-7.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Building maintenance</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+                    <div class="services__card">
+                        <img src="./img/service-8.png" alt="" class="services__img card">
+                        <h4 class="services__card-title card">Building renovation</h4>
+                        <p class="services__card-text card">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Delectus, omnis?</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="project section" id="project">
+            <div class="wraper container">
+                <h2 class="project__title">Our projects</h2>
+                <div class="project__cards">
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-1.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-2.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-3.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-4.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-5.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-6.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-4.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project__card">
+                        <div class="project__bg">
+                            <img src="./img/project-2.jpg" alt="" class="project__img">
+                        </div>
+                        <div class="project__box">
+                            <div class="project__box-text">
+                                <h4 class="project__card-title">Dream Home</h4>
+                                <p class="project__card-text">construction, design</p>
+                            </div>
+                            <div class="project__box-ico">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
