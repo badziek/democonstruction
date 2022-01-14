@@ -336,8 +336,8 @@ html {
 		display: flex;
 		flex-direction: column;
 	}
-	&__item {
-		margin: 2rem 0;
+	&__video {
+		margin-bottom: 4rem;
 	}
 	&__video-play {
 		height: 100%;
@@ -557,6 +557,35 @@ html {
 			background-color: $yellow;
 			color: $black;
 		}
+	}
+}
+.contact {
+	background-color: $black;
+	&__title {
+		@include sectionTitle(3rem);
+		color: $white;
+	}
+	&__box {
+		@include grid(28rem);
+	}
+	&__box-form {
+		display: flex;
+		flex-direction: column;
+		background-color: $white;
+		padding: 1rem;
+	}
+	&__form-title {
+		@include title(2rem);
+	}
+	&__form {
+		margin-top: 3rem;
+	}
+	&__field {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem 0;
+		border-bottom: 2px solid $lightGray;
 	}
 }
 

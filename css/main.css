@@ -21,7 +21,7 @@
   padding: 1rem 3rem;
   font-size: 1.6rem;
   color: white;
-  background-color: #141414;
+  background-color: #111;
 }
 
 .card {
@@ -82,7 +82,7 @@ html {
   font-family: 'Bebas Neue', cursive;
   font-size: 2rem;
   letter-spacing: 2px;
-  color: #141414;
+  color: #111;
 }
 
 .header__logo span {
@@ -147,7 +147,7 @@ html {
 .header__navitem {
   padding: 1.7rem 1.5rem;
   font-size: 1.6rem;
-  color: #141414;
+  color: #111;
 }
 
 .header__navitem:hover {
@@ -176,7 +176,7 @@ html {
   height: 3.3rem;
   font-size: 1.6rem;
   color: #fff;
-  background-color: #141414;
+  background-color: #111;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -190,7 +190,7 @@ html {
 }
 
 .header__icon--color:hover {
-  background-color: #141414;
+  background-color: #111;
 }
 
 .header__search {
@@ -256,7 +256,7 @@ html {
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-style: none;
-  border: 1px solid #141414;
+  border: 1px solid #111;
   border-radius: 2.5rem;
 }
 
@@ -332,12 +332,12 @@ html {
   margin: 1rem 0;
   padding: 1rem;
   border-style: none;
-  border: 1px solid #141414;
+  border: 1px solid #111;
   border-radius: 2.5rem;
 }
 
 .header__user-input--color {
-  background-color: #141414;
+  background-color: #111;
   color: #fff;
   cursor: pointer;
 }
@@ -510,7 +510,7 @@ html {
   padding: 1rem 2rem;
   font-size: 1.6rem;
   color: white;
-  background-color: #141414;
+  background-color: #111;
 }
 
 .about {
@@ -541,8 +541,8 @@ html {
           flex-direction: column;
 }
 
-.about__item {
-  margin: 2rem 0;
+.about__video {
+  margin-bottom: 4rem;
 }
 
 .about__video-play {
@@ -628,7 +628,7 @@ html {
 }
 
 .project {
-  background-color: #141414;
+  background-color: #111;
 }
 
 .project__title {
@@ -685,7 +685,7 @@ html {
 .project__card-title {
   margin-bottom: 1rem;
   font-size: 1.7rem;
-  color: #141414;
+  color: #111;
 }
 
 .project__card-text {
@@ -791,12 +791,12 @@ html {
 .reviews__user-name {
   margin-bottom: 1rem;
   font-size: 2rem;
-  color: #141414;
+  color: #111;
 }
 
 .reviews__stars {
   font-size: 1.4rem;
-  color: #141414;
+  color: #111;
   color: #f5bf23;
 }
 
@@ -860,7 +860,7 @@ html {
 
 .price__content-title {
   font-size: 2rem;
-  color: #141414;
+  color: #111;
 }
 
 .price__price {
@@ -891,7 +891,62 @@ html {
 
 .price__button:hover {
   background-color: #f5bf23;
-  color: #141414;
+  color: #111;
+}
+
+.contact {
+  background-color: #111;
+}
+
+.contact__title {
+  margin-bottom: 4rem;
+  padding: .7rem 1rem;
+  font-size: 3rem;
+  border-left: 1rem solid #f5bf23;
+  color: #fff;
+}
+
+.contact__box {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(28rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  gap: 2rem;
+}
+
+.contact__box-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.contact__form-title {
+  font-size: 2rem;
+  color: #111;
+}
+
+.contact__form {
+  margin-top: 3rem;
+}
+
+.contact__field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+  border-bottom: 2px solid #eee;
 }
 
 @media (min-width: 576px) {
