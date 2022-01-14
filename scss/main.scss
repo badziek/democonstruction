@@ -426,7 +426,6 @@ html {
 	}
 	&__box-text {
 		padding: 1.5rem;
-
 	}
 	&__card-title {
 		margin-bottom: 1rem;
@@ -443,6 +442,121 @@ html {
 		font-size: 3rem;
 		background-color: $yellow;
 		cursor: pointer;
+	}
+}
+.reviews {
+	&__title {
+		@include sectionTitle(3rem);
+	}
+	&__grid {
+		@include grid(25rem);
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+		// @include boxShadow;
+	}
+	&__text-box {
+		position: relative;
+		margin-bottom: 3rem;
+		background-color: $lightGray;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: -1rem;
+			left: 2rem;
+			height: 2rem;
+			width: 2rem;
+			background: $lightGray;
+			transform: rotate(45deg);
+		}
+	}
+	&__text {
+		padding: 1rem;
+		@include text(1.5rem);
+		line-height: 2;
+		background-color: $lightGray;
+	}
+	&__user-box {
+		display: flex;
+	}
+
+	&__img {
+		height: 7rem;
+		width: 7rem;
+	}
+	&__user {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-left: 1rem;
+	}
+	&__user-name {
+		margin-bottom: 1rem;
+		@include title(2rem);
+	}
+	&__stars {
+		@include title(1.4rem);
+		color: $yellow;
+	}
+}
+.price {
+	background-color: $lightGray;
+	&__title {
+		@include sectionTitle(3rem);
+	}
+	&__box {
+		@include grid(28rem);
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 2rem;
+		background-color: $white;
+		border: 1px solid $gray;
+		@include boxShadow;
+	}
+	&__icons {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 2rem;
+		width: 6rem;
+		height: 6rem;
+		background-color: $yellow;
+		border-radius: 50%;
+	}
+	&__ico {
+		font-size: 3rem;
+	}
+	&__content-title {
+		@include title(2rem);
+	}
+	&__price {
+		padding: 1rem 0;
+		font-size: 5rem;
+	}
+	&__span {
+		font-size: 2.5rem;
+	}
+	&__package {
+		padding: 1rem 0;
+	}
+	&__package-list {
+		padding: 1rem 0;
+		line-height: 2;
+		text-align: center;
+		@include text(1.3rem);
+	}
+	&__button {
+		font-size: 1.3rem;
+		color: $white;
+		&:hover {
+			background-color: $yellow;
+			color: $black;
+		}
 	}
 }
 

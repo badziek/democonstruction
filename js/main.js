@@ -40,5 +40,5 @@ window.onscroll = () =>{
    navbar.classList.remove('action');
    search.classList.remove('action');
    user.classList.remove('action');
-   info.classList.remove('action');
+   info.classList.remove('swipe');
 };
