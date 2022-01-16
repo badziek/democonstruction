@@ -30,4 +30,12 @@
      font-size: ($size);
      color: $gray;
  }
+ @mixin btn($val) {
+    padding: ($val);
+	font-size: 1.6rem;
+	color: white;
+    border: none;
+	background-color: $black;
+    cursor: pointer;
+ }
 

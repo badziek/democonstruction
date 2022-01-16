@@ -7,6 +7,7 @@ let searchBtn = document.querySelector('#search-btn');
 let userBtn = document.querySelector('#user-btn');
 let infoBtn = document.querySelector('#info-btn');
 let infoClose = document.querySelector('#info__close');
+const textInput = document.querySelectorAll('.contact__input')
 
 document.querySelector('#menu-btn').onclick = () =>{
    navbar.classList.toggle('action');
@@ -42,3 +43,14 @@ window.onscroll = () =>{
    user.classList.remove('action');
    info.classList.remove('swipe');
 };
+
+textInput.forEach(textInput => {
+   textInput.addEventListener("focus", () => {
+      let parent = textInput.parentNode;
+      parent.classList.add("active");
+   });
+   textInput.addEventListener("blur", () => {
+      let parent = textInput.parentNode;
+      parent.classList.remove("active");
+   });
+});

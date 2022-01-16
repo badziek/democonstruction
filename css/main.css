@@ -18,6 +18,7 @@
 }
 
 .button {
+  margin: 2rem 0;
   padding: 1rem 3rem;
   font-size: 1.6rem;
   color: white;
@@ -550,11 +551,25 @@ html {
   width: 100%;
 }
 
+.about__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .about__content-title {
   font-size: 3rem;
 }
 
 .about__cards {
+  margin-top: 2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(13rem, 1fr))[auto-fit];
@@ -923,7 +938,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fff;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .contact__form-title {
@@ -946,7 +961,77 @@ html {
       -ms-flex-align: center;
           align-items: center;
   margin: 2rem 0;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.contact .active {
+  border-bottom: 1px solid #f5bf23;
+}
+
+.contact .active .contact__ico {
+  color: #f5bf23;
+}
+
+.contact__input {
+  width: 100%;
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: #6d6969;
+  font-size: 1rem;
+  line-height: 5.5;
+}
+
+.contact__input:-ms-input-placeholder {
+  color: #6d6969;
+  font-size: 1rem;
+  line-height: 5.5;
+}
+
+.contact__input::-ms-input-placeholder {
+  color: #6d6969;
+  font-size: 1rem;
+  line-height: 5.5;
+}
+
+.contact__input::placeholder {
+  color: #6d6969;
+  font-size: 1rem;
+  line-height: 5.5;
+}
+
+.contact__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4rem;
+  height: 4rem;
+}
+
+.contact__ico {
+  margin-right: 1.5rem;
+  font-size: 2rem;
+  color: #6d6969;
+  text-align: center;
+}
+
+.contact__button {
+  padding: 1rem 3rem;
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+  background-color: #111;
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {

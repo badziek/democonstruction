@@ -104,17 +104,17 @@
                 <div class="about__box">
                     <div class="about__video"><video class="about__video-play" src="./img/about-vid.mp4" loop muted
                             autoplay></video></div>
-                    <div class="about__content about__item">
-                        <h3 class="about__content-title about__item">
+                    <div class="about__content">
+                        <h3 class="about__content-title">
                             We will provide you the best work which you dream for!
                         </h3>
-                        <p class="about__text about__item section-text">Lorem ipsum dolor sit amet consectetur
+                        <p class="about__text section-text">Lorem ipsum dolor sit amet consectetur
                             adipisicing elit. Laboriosam est esse cumque numquam obcaecati, possimus quos quas quisquam
                             asperiores! Ex illo dolores aut quas doloremque corrupti distinctio ullam error ab.</p>
                         <a href="#services" class="about__button about__item button">Read more</a>
                     </div>
                 </div>
-                <div class="about__cards about__item">
+                <div class="about__cards">
                     <div class="about__card">
                         <h4 class="about__card-title">15+</h4>
                         <p class="about__card-text">years of experiance</p>
@@ -458,22 +458,30 @@
                         <form action="" class="contact__form">
 
                             <div class="contact__field">
-                                <i class="far fa-user contact__ico"></i>
-                                <input type="text" name="name" placeholder="Your name" class="contact__input" contact__input>
+                                <div class="contact__icons">
+                                    <i class="far fa-user contact__ico"></i>
+                                </div>
+                                <input type="text" name="name" placeholder="Your name" class="contact__input">
                             </div>
 
                             <div class="contact__field">
-                                <i class="fas fa-at contact__ico"></i>
-                                <input type="email" name="e-mail" placeholder="Your e-mail address" contact__input>
+                                <div class="contact__icons">
+                                    <i class="fas fa-at contact__ico"></i>
+                                </div>
+                                <input type="email" name="e-mail" placeholder="Your e-mail address" class="contact__input">
                             </div>
 
                             <div class="contact__field">
-                                <i class="fas fa-mobile-alt contact__ico"></i>
+                                <div class="contact__icons">
+                                    <i class="fas fa-mobile-alt contact__ico"></i>
+                                </div>
                                 <input type="tel" name="phone" placeholder="Your phone number" class="contact__input">
                             </div>
                             <div class="contact__field">
-                                <i class="far fa-envelope-open contact__ico"></i>
-                                <textarea name="text" id="" placeholder="Your message" contact__input></textarea>
+                                <div class="contact__icons contact__icons-up">
+                                    <i class="far fa-envelope-open contact__ico"></i>
+                                </div>
+                                <textarea name="text" id="" placeholder="Your message" rows="3" class="contact__input"></textarea>
                             </div>
 
                             <button class="contact__button">Send message</button>
