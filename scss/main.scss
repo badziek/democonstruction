@@ -290,7 +290,6 @@ html {
 			z-index: -1;
 		}
 	}
-
 	&__content {
 		display: flex;
 		flex-direction: column;
@@ -386,7 +385,6 @@ html {
 			transform: translateY(-1rem);
 		}
 	}
-
 	&__img {
 		height: 7rem;
 		transition: 0.3s;
@@ -632,7 +630,6 @@ html {
 	font-size: 1.6rem;
 	text-align: center;
 }
-
 @media (min-width: 576px) {
 	.header {
 		&__search,

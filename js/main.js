@@ -9,7 +9,6 @@ let infoBtn = document.querySelector('#info-btn')
 let infoClose = document.querySelector('#info__close')
 const textInput = document.querySelectorAll('.contact__input')
 const footerYear = document.querySelector('.footer__year')
-
 document.querySelector('#menu-btn').onclick = () => {
 	navbar.classList.toggle('action')
 	search.classList.remove('action')
