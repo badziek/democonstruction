@@ -467,6 +467,19 @@ html {
   background: url("../img/home-slide-3.jpg") no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: 2;
+}
+
+.home__box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(transparent));
+  background: linear-gradient(90deg, #fff, transparent);
+  z-index: -1;
 }
 
 .home__content {
@@ -485,7 +498,6 @@ html {
           align-items: center;
   padding: 2rem;
   height: 80vh;
-  z-index: +2;
 }
 
 .home__item {
@@ -1066,6 +1078,12 @@ html {
 .contact__button:hover {
   background-color: #f5bf23;
   color: #111;
+}
+
+.footer {
+  padding: 3rem 0;
+  font-size: 1.6rem;
+  text-align: center;
 }
 
 @media (min-width: 576px) {

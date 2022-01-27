@@ -16,13 +16,7 @@ html {
 	font-size: 62.5%;
 	scroll-behavior: smooth;
 	scroll-padding-top: 5rem;
-	// overflow-x: hidden;
 }
-// body {
-// 	position: relative;
-// 	background-color: $yellow;
-// }
-
 .header {
 	position: sticky;
 	top: 0;
@@ -283,17 +277,19 @@ html {
 	background: url('../img/home-slide-3.jpg') no-repeat;
 	background-size: cover;
 	background-position: center;
-	// &__box {
-	// 	&::before {
-	// 		content: '';
-	// 		position: absolute;
-	// 		top: 0;
-	// 		left: 0;
-	// 		height: 100%;
-	// 		width: 100%;
-	// 		background: linear-gradient(90deg, $white, transparent);
-	// 	}
-	// }
+	z-index: 2;
+	&__box {
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			background: linear-gradient(90deg, $white, transparent);
+			z-index: -1;
+		}
+	}
 
 	&__content {
 		display: flex;
@@ -302,7 +298,6 @@ html {
 		align-items: center;
 		padding: 2rem;
 		height: 80vh;
-		z-index: +2;
 	}
 	&__item {
 		margin-bottom: 2rem;
@@ -353,7 +348,7 @@ html {
 	}
 	&__button {
 		@include btn(1.5rem 2rem);
-		 text-align: center;
+		text-align: center;
 	}
 	&__cards {
 		margin-top: 2rem;
@@ -631,6 +626,11 @@ html {
 	&__button {
 		@include btn(1rem 3rem);
 	}
+}
+.footer {
+	padding: 3rem 0;
+	font-size: 1.6rem;
+	text-align: center;
 }
 
 @media (min-width: 576px) {
