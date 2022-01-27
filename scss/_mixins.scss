@@ -1,41 +1,44 @@
 @mixin boxShadow {
-    box-shadow: .5rem .4rem 1rem rgba(0,0,0,.2);
+	box-shadow: 0.5rem 0.4rem 1rem rgba(0, 0, 0, 0.2);
 }
 @mixin border-top {
-    border-top: .1rem solid $gray;
+	border-top: 0.1rem solid $gray;
 }
 @mixin border-bottom {
-    border-bottom: .1rem solid $gray;
+	border-bottom: 0.1rem solid $gray;
 }
 @mixin ico-animation {
-    animation: search .5s both;
+	animation: search 0.5s both;
 }
 @mixin grid($val) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-    gap:2rem;
- }
- @mixin sectionTitle($size) {
-        margin-bottom: 4rem;
-        padding: .7rem 1rem;
-        font-size: ($size);
-        border-left: 1rem solid $yellow;
- }
- @mixin title($size) {
-     font-size: ($size);
-     color: $black;
-     
- }
- @mixin text($size) {
-     font-size: ($size);
-     color: $gray;
- }
- @mixin btn($val) {
-    padding: ($val);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+	gap: 2rem;
+}
+@mixin sectionTitle($size) {
+	margin-bottom: 4rem;
+	padding: 0.7rem 1rem;
+	font-size: ($size);
+	border-left: 1rem solid $yellow;
+}
+@mixin title($size) {
+	font-size: ($size);
+	color: $black;
+}
+@mixin text($size) {
+	font-size: ($size);
+	color: $gray;
+}
+@mixin btn($val) {
+	padding: ($val);
 	font-size: 1.6rem;
 	color: white;
-    border: none;
+	border: none;
 	background-color: $black;
-    cursor: pointer;
- }
-
+	cursor: pointer;
+    transition: .3s;
+	&:hover {
+		background-color: $yellow;
+        color: $black;
+	}
+}

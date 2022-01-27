@@ -15,7 +15,7 @@ html {
 	font-family: 'Roboto', sans-serif;
 	font-size: 62.5%;
 	scroll-behavior: smooth;
-	scroll-padding-top: 7rem;
+	scroll-padding-top: 5rem;
 	// overflow-x: hidden;
 }
 // body {
@@ -146,13 +146,12 @@ html {
 	}
 	&__input {
 		padding: 0.5rem 1rem;
+		width: 100%;
 		font-size: 1.2rem;
 		border-style: none;
 		border: 1px solid $black;
 		border-radius: 2.5rem;
-	}
-	&__input {
-		width: 100%;
+		outline: none;
 	}
 	&__user {
 		position: absolute;
@@ -197,6 +196,7 @@ html {
 		border-style: none;
 		border: 1px solid $black;
 		border-radius: 2.5rem;
+		outline: none;
 		&--color {
 			background-color: $black;
 			color: $white;
@@ -268,8 +268,8 @@ html {
 	}
 }
 .swipe {
-	box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-	animation: info 0.3s linear both;
+	box-shadow: 0 0 0 100vw rgba(71, 71, 71, 0.8);
+	animation: info 0.5s both;
 }
 @keyframes info {
 	100% {
@@ -319,10 +319,7 @@ html {
 		line-height: 2.5rem;
 	}
 	&__button {
-		padding: 1rem 2rem;
-		font-size: 1.6rem;
-		color: white;
-		background-color: $black;
+		@include btn(1rem 5rem);
 	}
 }
 .about {
@@ -346,10 +343,17 @@ html {
 	&__content {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
 	}
 	&__content-title {
-		font-size: 3rem;
+		margin-bottom: 3rem;
+		@include title(3rem);
+	}
+	&__text {
+		margin-bottom: 5rem;
+	}
+	&__button {
+		@include btn(1.5rem 2rem);
+		 text-align: center;
 	}
 	&__cards {
 		margin-top: 2rem;
@@ -597,7 +601,7 @@ html {
 		border-bottom: 1px solid $yellow;
 	}
 	.active .contact__ico {
-			color: $yellow;	
+		color: $yellow;
 	}
 	&__input {
 		width: 100%;
@@ -627,7 +631,6 @@ html {
 	&__button {
 		@include btn(1rem 3rem);
 	}
-	
 }
 
 @media (min-width: 576px) {

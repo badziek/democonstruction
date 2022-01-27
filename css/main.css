@@ -18,7 +18,6 @@
 }
 
 .button {
-  margin: 2rem 0;
   padding: 1rem 3rem;
   font-size: 1.6rem;
   color: white;
@@ -49,7 +48,7 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 5rem;
 }
 
 .header {
@@ -255,14 +254,12 @@ html {
 
 .header__input {
   padding: 0.5rem 1rem;
+  width: 100%;
   font-size: 1.2rem;
   border-style: none;
   border: 1px solid #111;
   border-radius: 2.5rem;
-}
-
-.header__input {
-  width: 100%;
+  outline: none;
 }
 
 .header__user {
@@ -335,6 +332,7 @@ html {
   border-style: none;
   border: 1px solid #111;
   border-radius: 2.5rem;
+  outline: none;
 }
 
 .header__user-input--color {
@@ -443,10 +441,10 @@ html {
 }
 
 .swipe {
-  -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-          box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
-  -webkit-animation: info 0.3s linear both;
-          animation: info 0.3s linear both;
+  -webkit-box-shadow: 0 0 0 100vw rgba(71, 71, 71, 0.8);
+          box-shadow: 0 0 0 100vw rgba(71, 71, 71, 0.8);
+  -webkit-animation: info 0.5s both;
+          animation: info 0.5s both;
 }
 
 @-webkit-keyframes info {
@@ -508,10 +506,19 @@ html {
 }
 
 .home__button {
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
   font-size: 1.6rem;
   color: white;
+  border: none;
   background-color: #111;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.home__button:hover {
+  background-color: #f5bf23;
+  color: #111;
 }
 
 .about {
@@ -527,7 +534,7 @@ html {
 
 .about__title {
   margin-bottom: 4rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 3rem;
   border-left: 1rem solid #f5bf23;
 }
@@ -559,13 +566,33 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .about__content-title {
+  margin-bottom: 3rem;
   font-size: 3rem;
+  color: #111;
+}
+
+.about__text {
+  margin-bottom: 5rem;
+}
+
+.about__button {
+  padding: 1.5rem 2rem;
+  font-size: 1.6rem;
+  color: white;
+  border: none;
+  background-color: #111;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+  text-align: center;
+}
+
+.about__button:hover {
+  background-color: #f5bf23;
+  color: #111;
 }
 
 .about__cards {
@@ -599,7 +626,7 @@ html {
 
 .services__title {
   margin-bottom: 4rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 3rem;
   border-left: 1rem solid #f5bf23;
 }
@@ -648,7 +675,7 @@ html {
 
 .project__title {
   margin-bottom: 4rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 3rem;
   border-left: 1rem solid #f5bf23;
   color: #fff;
@@ -726,7 +753,7 @@ html {
 
 .reviews__title {
   margin-bottom: 4rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 3rem;
   border-left: 1rem solid #f5bf23;
 }
@@ -821,7 +848,7 @@ html {
 
 .price__title {
   margin-bottom: 4rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 3rem;
   border-left: 1rem solid #f5bf23;
 }
@@ -915,7 +942,7 @@ html {
 
 .contact__title {
   margin-bottom: 4rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
   font-size: 3rem;
   border-left: 1rem solid #f5bf23;
   color: #fff;
@@ -1032,6 +1059,13 @@ html {
   border: none;
   background-color: #111;
   cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.contact__button:hover {
+  background-color: #f5bf23;
+  color: #111;
 }
 
 @media (min-width: 576px) {
